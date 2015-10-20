@@ -25,4 +25,15 @@ public class Main {
         System.out.println(sb);
     }
 
+    /**
+     * Prints the given messages count times
+     * @param msg the message to print
+     * @param count this many times
+     */
+    private static void print(String msg, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println(msg);
+        }
+    }
+
 }
