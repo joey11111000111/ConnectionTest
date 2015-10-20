@@ -4,7 +4,7 @@
 
     <groupId>joey-learning-group</groupId>
     <artifactId>connection-test</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:git@github.com:joey11111000111/ConnectionTest.git</connection>

@@ -36,4 +36,8 @@ public class Main {
         }
     }
 
+    private static int dumbMethod() {
+        return 0;
+    }
+
 }
