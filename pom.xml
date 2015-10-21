@@ -4,14 +4,33 @@
 
     <groupId>joey-learning-group</groupId>
     <artifactId>connection-test</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.3-SNAPSHOT</version>
+
+    <description>
+        The sole purpose of this project is to help me understand how to build
+        a maven java project that uses git with a github repository.
+        I'm starting to understand, and I'm glad to do so.
+    </description>
+
+    <developers>
+        <developer>
+            <name>Kovács Tamás</name>
+            <email>tommy1991@vipmail.hu</email>
+            <id>joey</id>
+            <organization>The home-made</organization>
+            <organizationUrl>https://www.thehomemade.net</organizationUrl>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:joey11111000111/ConnectionTest.git</connection>
-        <url>scm:git:git@github.com:joey11111000111/ConnectionTest.git</url>
+        <connection>scm:git:git://github.com/joey11111000111/ConnectionTest.git</connection>
+        <url>https://github.com/joey11111000111/ConnectionTest</url>
         <developerConnection>scm:git:git@github.com:joey11111000111/ConnectionTest.git</developerConnection>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
 
     <build>
         <plugins>
@@ -20,7 +39,33 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.3.2</version>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.3</version>
+                <configuration>
+                    <show>private</show>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>site</phase>
+                        <goals><goal>javadoc</goal></goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
         </plugins>
     </build>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License</name>
+            <url>http://www.gnu.org/licenses/gpl.txt</url>
+            <distribution>manual</distribution>
+            <comments>Copyleft license</comments>
+        </license>
+    </licenses>
 
 </project>
